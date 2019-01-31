@@ -4,6 +4,6 @@
 
 
 int main(void) {
-	printf("Hello, my name is Darrell");
+	printf("Goodbye, I finished my CS 2560 HW1");
 
 }
