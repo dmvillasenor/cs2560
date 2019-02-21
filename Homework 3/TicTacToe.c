@@ -1,7 +1,9 @@
 #include <stdio.h>
 
+//Create Tic-Tac-Toe board
 char board[4][4] = {{' ','1','2','3'},{'1','*','*','*'},{'2','*','*','*'},{'3','*','*','*'}};
 
+//Prints the board out
 void printBoard(){
 	for(int row = 0; row < 4; row++){
 		for(int column = 0; column < 4; column++){
@@ -11,6 +13,7 @@ void printBoard(){
 	}// end outside for
 }//end printBoard
 
+//Ensures the selected space is not already taken
 int moveAvailable(int row, int column){
 	if( board[row][column] == 'X' || board[row][column] == 'O'){
 		return 0;
@@ -19,6 +22,8 @@ int moveAvailable(int row, int column){
 		return 1;
 	}
 }
+
+//Assigns the space with X or O depending on whose turn it is
 void assignSpace(int row, int column, int player){
 	char tictac;
 	if( player == 0){
@@ -34,6 +39,7 @@ void playerMove(int player){
 	int validMove = 0;
 	int row;
 	int column;
+	//Keeps asking player for a space until its a valid choice.
 	while(!validMove){
 
 		printf("Input Row:\n");
@@ -41,12 +47,14 @@ void playerMove(int player){
 		printf("Input Column:\n");
 		scanf("%d", &column);
 
+		//Checks if the move is valid and only ends the loops and assigns it if it is.
 		if( row <= 3 && row > 0 && column <= 3 && column > 0 && moveAvailable(row, column)){
 			validMove = 1;
 			assignSpace(row, column, player);
 		}//end if
 		else{
 			printf("Enter a valid available space\n");
+
 		}//end else
 	}//end while
 }
@@ -54,8 +62,10 @@ int boardFull(){
 	//printf("boardfull is running\n");
 	int boardFull = 0;
 	int containStar = 0;
-	for(int row = 0; row < 4; row++){
-		for(int column = 0; column < 4; column++){
+
+	//Checks for any stars left on the board.
+	for(int row = 1; row < 4; row++){
+		for(int column = 1; column < 4; column++){
 			if(board[row][column] == '*'){
 				containStar = 1;
 				//printf("contains a star\n");
@@ -66,12 +76,14 @@ int boardFull(){
 	if(containStar){
 		//printf("boardfull returning 0");
 		return 0;
-	}
+	}//end if
 	else{
 		//printf("boardfull returning 1");
 		return 1;
-	}
-}
+
+	}//end else
+}//end boardFull()
+
 int rowWin(){
 	int winner = 1;
 
@@ -103,11 +115,17 @@ int rowWin(){
 }
 
 int checkWinner(int player){
+	//Determines if the games over
 	int gameOver = 0;
+
+	//Determine who is winner:
+	// 0 = tie, 1 & 2 = players 1 or 2.
 	int winner =  0;
-	//int boardFull = boardFull();
-	//boardFull();
+
 	int rowWinner = rowWin();
+
+	//Checkers if board the board is full
+	//rowWinner outputs true if there is no winner.
 	if(boardFull() && rowWinner){
 		gameOver = 1;
 		printf("Game is a tie");
@@ -134,6 +152,8 @@ int main(void) {
 
 		gameOver = checkWinner(1);
 		//printf("Gameover = %d\n", gameOver);
+
+		//Ensures Player 2 does not take turn if game is over.
 		if(gameOver){
 			break;
 		}
