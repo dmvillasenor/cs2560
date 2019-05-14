@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2BCF03A228A914800EFEE9F /* BigNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF038228A914800EFEE9F /* BigNumbers.cpp */; };
+		D2BCF049228A982000EFEE9F /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BCF047228A982000EFEE9F /* libgtest_main.a */; };
+		D2BCF04A228A982000EFEE9F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BCF048228A982000EFEE9F /* libgtest.a */; };
+		D2BCF052228A989F00EFEE9F /* Unit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF051228A989F00EFEE9F /* Unit_Tests.m */; };
+		D2BCF054228A989F00EFEE9F /* libBigNumbers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BCF031228A911000EFEE9F /* libBigNumbers.a */; };
+		D2BCF05B228A98BC00EFEE9F /* GoogleTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF05A228A98BC00EFEE9F /* GoogleTests.mm */; };
+		D2BCF05D228A992700EFEE9F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF05C228A98F700EFEE9F /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2BCF055228A989F00EFEE9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2BCF029228A911000EFEE9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2BCF030228A911000EFEE9F;
+			remoteInfo = BigNumbers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2BCF031228A911000EFEE9F /* libBigNumbers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBigNumbers.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BCF038228A914800EFEE9F /* BigNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumbers.cpp; sourceTree = "<group>"; };
+		D2BCF03C228A916500EFEE9F /* BigNumbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigNumbers.h; sourceTree = "<group>"; };
+		D2BCF047228A982000EFEE9F /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = "../../Downloads/googletest-master/build/lib/libgtest_main.a"; sourceTree = "<group>"; };
+		D2BCF048228A982000EFEE9F /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = "../../Downloads/googletest-master/build/lib/libgtest.a"; sourceTree = "<group>"; };
+		D2BCF04F228A989F00EFEE9F /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BCF051228A989F00EFEE9F /* Unit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unit_Tests.m; sourceTree = "<group>"; };
+		D2BCF053228A989F00EFEE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2BCF05A228A98BC00EFEE9F /* GoogleTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GoogleTests.mm; path = "../../../xcode-googletest/Bundle/GoogleTests.mm"; sourceTree = "<group>"; };
+		D2BCF05C228A98F700EFEE9F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2BCF02F228A911000EFEE9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BCF049228A982000EFEE9F /* libgtest_main.a in Frameworks */,
+				D2BCF04A228A982000EFEE9F /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BCF04C228A989F00EFEE9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BCF054228A989F00EFEE9F /* libBigNumbers.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2BCF028228A911000EFEE9F = {
+			isa = PBXGroup;
+			children = (
+				D2BCF03C228A916500EFEE9F /* BigNumbers.h */,
+				D2BCF038228A914800EFEE9F /* BigNumbers.cpp */,
+				D2BCF05C228A98F700EFEE9F /* main.cpp */,
+				D2BCF050228A989F00EFEE9F /* Unit Tests */,
+				D2BCF032228A911000EFEE9F /* Products */,
+				D2BCF046228A982000EFEE9F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2BCF032228A911000EFEE9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2BCF031228A911000EFEE9F /* libBigNumbers.a */,
+				D2BCF04F228A989F00EFEE9F /* Unit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2BCF046228A982000EFEE9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2BCF047228A982000EFEE9F /* libgtest_main.a */,
+				D2BCF048228A982000EFEE9F /* libgtest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2BCF050228A989F00EFEE9F /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D2BCF05A228A98BC00EFEE9F /* GoogleTests.mm */,
+				D2BCF051228A989F00EFEE9F /* Unit_Tests.m */,
+				D2BCF053228A989F00EFEE9F /* Info.plist */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2BCF02D228A911000EFEE9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2BCF030228A911000EFEE9F /* BigNumbers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BCF035228A911000EFEE9F /* Build configuration list for PBXNativeTarget "BigNumbers" */;
+			buildPhases = (
+				D2BCF02D228A911000EFEE9F /* Headers */,
+				D2BCF02E228A911000EFEE9F /* Sources */,
+				D2BCF02F228A911000EFEE9F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigNumbers;
+			productName = BigNumbers;
+			productReference = D2BCF031228A911000EFEE9F /* libBigNumbers.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2BCF04E228A989F00EFEE9F /* Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BCF057228A989F00EFEE9F /* Build configuration list for PBXNativeTarget "Unit Tests" */;
+			buildPhases = (
+				D2BCF04B228A989F00EFEE9F /* Sources */,
+				D2BCF04C228A989F00EFEE9F /* Frameworks */,
+				D2BCF04D228A989F00EFEE9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2BCF056228A989F00EFEE9F /* PBXTargetDependency */,
+			);
+			name = "Unit Tests";
+			productName = "Unit Tests";
+			productReference = D2BCF04F228A989F00EFEE9F /* Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2BCF029228A911000EFEE9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Matthew Villasenor";
+				TargetAttributes = {
+					D2BCF030228A911000EFEE9F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D2BCF04E228A989F00EFEE9F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D2BCF02C228A911000EFEE9F /* Build configuration list for PBXProject "BigNumbers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2BCF028228A911000EFEE9F;
+			productRefGroup = D2BCF032228A911000EFEE9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2BCF030228A911000EFEE9F /* BigNumbers */,
+				D2BCF04E228A989F00EFEE9F /* Unit Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2BCF04D228A989F00EFEE9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2BCF02E228A911000EFEE9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BCF05D228A992700EFEE9F /* main.cpp in Sources */,
+				D2BCF03A228A914800EFEE9F /* BigNumbers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BCF04B228A989F00EFEE9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BCF05B228A98BC00EFEE9F /* GoogleTests.mm in Sources */,
+				D2BCF052228A989F00EFEE9F /* Unit_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2BCF056228A989F00EFEE9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2BCF030228A911000EFEE9F /* BigNumbers */;
+			targetProxy = D2BCF055228A989F00EFEE9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D2BCF033228A911000EFEE9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/matthewvillasenor/Downloads/googletest-master/googletest/include";
+				LIBRARY_SEARCH_PATHS = "/Users/matthewvillasenor/Downloads/googletest-master/build/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D2BCF034228A911000EFEE9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/matthewvillasenor/Downloads/googletest-master/googletest/include";
+				LIBRARY_SEARCH_PATHS = "/Users/matthewvillasenor/Downloads/googletest-master/build/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D2BCF036228A911000EFEE9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S552WGCJCU;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D2BCF037228A911000EFEE9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S552WGCJCU;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D2BCF058228A989F00EFEE9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S552WGCJCU;
+				INFOPLIST_FILE = "Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dmv.Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D2BCF059228A989F00EFEE9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S552WGCJCU;
+				INFOPLIST_FILE = "Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dmv.Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2BCF02C228A911000EFEE9F /* Build configuration list for PBXProject "BigNumbers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BCF033228A911000EFEE9F /* Debug */,
+				D2BCF034228A911000EFEE9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2BCF035228A911000EFEE9F /* Build configuration list for PBXNativeTarget "BigNumbers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BCF036228A911000EFEE9F /* Debug */,
+				D2BCF037228A911000EFEE9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2BCF057228A989F00EFEE9F /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BCF058228A989F00EFEE9F /* Debug */,
+				D2BCF059228A989F00EFEE9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2BCF029228A911000EFEE9F /* Project object */;
+}
