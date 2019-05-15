@@ -26,7 +26,7 @@ namespace BigNums{
         void setVector(std::vector<long long int> number);
         
     public:
-        //static std::vector<long long int> longNum;
+        int compareTo(BigNumbers num);
         
         BigNumbers(std::string bignum);
         

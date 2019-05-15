@@ -57,9 +57,90 @@ namespace BigNums{
         return longNum;
     }
     
+    int BigNumbers::compareTo(BigNumbers num){
+        int compare = 0;
+        
+        if(longNum.size() > num.getVector().size()){
+            compare = 1;
+        }
+        else if(longNum.size() < num.getVector().size()){
+            compare = -1;
+        }
+        else{
+            bool done = false;
+            std::vector<long long int> numbers = num.getVector();
+            int i = (int)(longNum.size() - 1);
+            while(!done){
+                if(longNum[i] > numbers[i]){
+                    compare = 1;
+                    done = true;
+                }//end if
+                else if(longNum[i] < numbers[i]){
+                    compare = -1;
+                    done = true;
+                }//end else if
+                else{
+                    i--;
+                }//end else
+            }//end while
+        }//end else
+        return compare;
+    }//end compareTO
+    
+    BigNumbers BigNumbers::operator%(BigNumbers num){
+        BigNumbers temp(longNum);
+ 
+        BigNumbers oneValue("1");
+        
+        
+        BigNumbers counter("0");
+        bool counting = true;
+        
+        while(counting){
+            counting = false;
+            
+            if( temp.compareTo(num) >= 0 ){
+                
+                temp = temp - num;
+                counting = true;
+                counter = counter + oneValue;
+            }
+        }
+        
+        return temp;
+    }
+    
+    BigNumbers BigNumbers::operator/(BigNumbers num){
+
+        
+        BigNumbers temp(longNum);
+        
+        BigNumbers oneValue("1");
+        
+        BigNumbers counter("0");
+        bool counting = true;
+        
+        while(counting){
+            counting = false;
+            
+            std::cout << temp.compareTo(num) << " - ";
+            if( temp.compareTo(num) >= 0 ){
+                
+                temp = temp - num;
+                temp.printNumber();
+                counting = true;
+                counter = counter + oneValue;
+            }
+        }
+        
+        return counter;
+    }
+    
+    
     BigNumbers BigNumbers::operator*(BigNumbers num){
         BigNumbers iterator("0");
         BigNumbers test("0");
+        
         if(longNum.size() >= num.getVector().size()){
             BigNumbers temp(num.getVector());
             iterator = temp;
@@ -67,6 +148,7 @@ namespace BigNums{
             BigNumbers temp2(longNum);
             test = temp2;
             
+            num = temp2;
         }
         else{
             BigNumbers temp(longNum);
@@ -75,14 +157,10 @@ namespace BigNums{
             BigNumbers temp2(num.getVector());
             test = temp2;
             
-            num = temp;
+            num = temp2;
         }
         
-        
-        
         BigNumbers oneValue("1");
-        //BigNumbers twoValue(iterator.getVector());
-        
         
         std::vector<long long int> iterVector = iterator.getVector();
         
@@ -94,12 +172,9 @@ namespace BigNums{
             iterator = iterator - oneValue;
             iterVector = iterator.getVector();
         }
-            
-        
-        
-        
         return num;
     }
+    
     BigNumbers BigNumbers::operator+(BigNumbers num){
         
         std::vector<long long int> firstNum;
@@ -188,7 +263,4 @@ namespace BigNums{
         num.setVector(firstNum);
         return num;
     }
-
-        
-    
 }

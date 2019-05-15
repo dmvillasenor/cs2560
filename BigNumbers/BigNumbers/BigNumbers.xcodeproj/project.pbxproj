@@ -13,7 +13,6 @@
 		D2BCF052228A989F00EFEE9F /* Unit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF051228A989F00EFEE9F /* Unit_Tests.m */; };
 		D2BCF054228A989F00EFEE9F /* libBigNumbers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BCF031228A911000EFEE9F /* libBigNumbers.a */; };
 		D2BCF05B228A98BC00EFEE9F /* GoogleTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF05A228A98BC00EFEE9F /* GoogleTests.mm */; };
-		D2BCF05D228A992700EFEE9F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF05C228A98F700EFEE9F /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +35,6 @@
 		D2BCF051228A989F00EFEE9F /* Unit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unit_Tests.m; sourceTree = "<group>"; };
 		D2BCF053228A989F00EFEE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2BCF05A228A98BC00EFEE9F /* GoogleTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GoogleTests.mm; path = "../../../xcode-googletest/Bundle/GoogleTests.mm"; sourceTree = "<group>"; };
-		D2BCF05C228A98F700EFEE9F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,6 @@
 			children = (
 				D2BCF03C228A916500EFEE9F /* BigNumbers.h */,
 				D2BCF038228A914800EFEE9F /* BigNumbers.cpp */,
-				D2BCF05C228A98F700EFEE9F /* main.cpp */,
 				D2BCF050228A989F00EFEE9F /* Unit Tests */,
 				D2BCF032228A911000EFEE9F /* Products */,
 				D2BCF046228A982000EFEE9F /* Frameworks */,
@@ -198,7 +195,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2BCF05D228A992700EFEE9F /* main.cpp in Sources */,
 				D2BCF03A228A914800EFEE9F /* BigNumbers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
